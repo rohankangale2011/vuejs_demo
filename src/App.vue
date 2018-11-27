@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 export default {
   name: 'App'
@@ -14,6 +14,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 #app {
   font-family: 'Roboto','sans-serif';

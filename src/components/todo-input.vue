@@ -13,42 +13,45 @@
 
 <script>
 export default {
-    name: 'InputTodo',
-    data() {
-        return {
-            todoname: ''
-        }
-    },
-    methods: {
-        addTodo: function() {
-            if(this.todoname) {
-                this.$emit('todoname', this.todoname)
-                this.todoname = '';
-            }
-        }
+  name: 'InputTodo',
+  data () {
+    return {
+      todoname: ''
     }
+  },
+  methods: {
+    addTodo: function () {
+      if (this.todoname) {
+        this.$emit('todoname', this.todoname)
+        this.todoname = ''
+      }
+    }
+  }
 }
 </script>
 
 <style scoped>
 .todo-input-container {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 button {
-    background: transparent;
-    border: 1px solid #1d6b84;
-    color: #1d6b84;
-    font-size: 14px;
-    width: 100%;
-    font-weight: bold;
+  background: transparent;
+  border: 1px solid #1d6b84;
+  color: #1d6b84;
+  font-size: 14px;
+  width: 100%;
+  font-weight: bold;
 }
 
 button:hover {
-    background: #1d6b84;
-    border: 1px solid #1d6b84;
-    color: #fff;
+  background: #1d6b84;
+  border: 1px solid #1d6b84;
+  color: #fff;
+}
+
+input {
+  font-size: 14px;
+  height: 32px;
 }
 </style>
-
-
